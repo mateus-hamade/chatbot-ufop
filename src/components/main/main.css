@@ -1,0 +1,52 @@
+main {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    
+    gap: 16px;
+    padding: 18px;
+
+    overflow-y: auto;
+}
+
+.bot-container {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bot-message {
+    background-color: #22C55E;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+
+    order: -1;
+}
+
+.user-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 16px;
+}
+
+.user-message {
+    background-color: #6366F1;
+    border-radius: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.icon {
+    color: #242424;
+    background-color: rgba(255, 255, 255, 0.87);
+
+    width: 52px;
+    height: 52px;
+
+    border-radius: 100%;
+    padding: 10px;
+}

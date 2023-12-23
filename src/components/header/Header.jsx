@@ -1,10 +1,16 @@
 import "./Header.css";
 
+import { Bot } from "lucide-react";
+
 const Header = () => {
    return (
-      <div>
-         <h1>Header</h1>
-      </div>
+      <header>
+         <Bot className="icon"/>
+         <div className="detail">
+               <p className="bot-name">Assistente Ufopianx</p>
+               <p className="status">Online</p>
+         </div>
+      </header>
    );
 };
 

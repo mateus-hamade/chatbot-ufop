@@ -1,10 +1,15 @@
 import "./Footer.css";
 
+import { SendHorizonal } from "lucide-react";
+
 const Footer = () => {
    return (
-      <div>
-         <h1>Footer</h1>
-      </div>
+      <footer>
+         <form action="">
+            <input />
+            <button type="submit"><SendHorizonal /></button>
+         </form>
+      </footer>
    );
 };
 
