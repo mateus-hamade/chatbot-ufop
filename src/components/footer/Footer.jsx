@@ -7,7 +7,7 @@ const Footer = () => {
       <footer>
          <form action="">
             <input />
-            <button type="submit"><SendHorizonal /></button>
+            <button id="send-button" type="submit"><SendHorizonal /></button>
          </form>
       </footer>
    );

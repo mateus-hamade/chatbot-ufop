@@ -1,52 +1,117 @@
+/* Main.css */
+
 main {
     display: flex;
-    flex: 1 1 auto;
     flex-direction: column;
-    
-    gap: 16px;
-    padding: 18px;
-
+    flex: 1 1 auto;
     overflow-y: auto;
+    gap: 10px;
+    padding: 10px;
+    font-size: 14px;
+
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+        gap: 10px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        gap: 16px;
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 769px) {
+        gap: 20px;
+        padding: 20px;
+        font-size: 14px;
+
+        width: 75%;
+    }
+}
+
+/* Estilos para os containers de bot e usuário */
+.bot-container, .user-container {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+}
+
+/* Estilos específicos de bot e usuário */
+.user-container {
+    justify-content: flex-start;
 }
 
 .bot-container {
-    display: flex;
-    gap: 16px;
     justify-content: flex-end;
-    align-items: center;
 }
 
-.bot-message {
-    background-color: #22C55E;
-    color: #fff;
+/* Estilos para as mensagens de bot e usuário */
+.user-message, .bot-message {
+    position: relative;
+    flex-wrap: wrap;
     border-radius: 10px;
-    padding: 10px;
+    background-color: #707A81;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    padding: 8px;
 
+    @media screen and (min-width: 481px) and (max-width: 1025px) {
+        max-width: 80%;
+        padding: 10px;
+    }
+
+    @media screen and (min-width: 769px) {
+        max-width: 80%;
+        padding: 12px;
+    }
+}
+
+/*  Estilos para o triângulo de bot e usuário */
+.bot-message::before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 100%;
+    border-top: 8px solid transparent;
+    border-left: 8px solid #707A81;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid transparent;   
+}
+
+.user-message::before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 100%;
+    border-top: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid #707A81;
+    border-bottom: 8px solid transparent;   
+}
+
+/* Estilos específicos para a mensagem do bot */
+.bot-message {
     order: -1;
 }
 
-.user-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    gap: 16px;
-}
-
-.user-message {
-    background-color: #6366F1;
-    border-radius: 10px;
-    padding: 10px;
-    flex-wrap: wrap;
-}
-
+/* Estilos para o ícone */
 .icon {
-    color: #242424;
-    background-color: rgba(255, 255, 255, 0.87);
-
+    color: #3D3F4B;
+    background-color: rgb(241, 241, 241);
     width: 52px;
     height: 52px;
-
     border-radius: 100%;
     padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    @media screen and (min-width: 320px) and (max-width: 1025px) {
+        width: 48px;
+        height: 48px;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1025px) {
+        width: 52px;
+        height: 52px;
+    }
 }

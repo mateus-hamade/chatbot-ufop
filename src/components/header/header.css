@@ -1,60 +1,186 @@
+/* Header */
 header {
-    background-color: #6366F1;
-
     display: flex;
     align-items: center;
-    gap: 12px;
+    background-color: #962038;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    gap: 10px;
+    padding: 10px;
 
-    padding: 18px;
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        gap: 16px;
+        padding: 14px;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        flex-direction: column;
+        width: 25%;
+        gap: 16px;
+        padding: 14px;
+    }
+
+    @media screen and (min-width: 1025px) {
+        flex-direction: column;
+        width: 25%;
+        gap: 16px;
+        padding: 20px;
+    }
 }
 
+/* Header Details */
 .detail {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 4px;
+    gap: 2px;
+    
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+        flex: 1 1 auto;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        align-items: center;
+        gap: 4px;
+    }
+
+    @media screen and (min-width: 1025px) {
+        align-items: center;
+        gap: 6px;
+    }
 }
 
+/* Bot Name */
 .bot-name {
-    font-size: 16px;
     font-weight: 700;
+    font-size: 14px;
+
+    @media screen and (min-width: 769px) {
+        font-size: 16px;
+        text-align: center;
+    }
 }
 
+/* Bot Status */
 .status {
-    background-color: #22C55E;
-
-    font-size: 10px;
+    background-color: #268035;
+    color: white;
     font-weight: 700;
-
     border-radius: 14px;
+    font-size: 8px;
     padding: 4px 8px;
+
+    @media screen and (min-width: 769px) {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-    header {
-        gap: 8px;
+/* Theme Button */
+.theme {
+    display: flex;
+    background-color: transparent;
+    border: none;
 
-        padding: 12px;  
+    @media screen and (min-width: 769px) {
+        display: none;
+    }
+}
+
+/* History Container */
+.history-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    gap: 10px;
+    width: 100%;
+    padding: 20px;
+    
+    @media screen and (max-width: 768px) {
+        display: none;
     }
 
-    .detail {
-        gap: 2px;
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        padding: 10px;
+        gap: 5px;
     }
+}
 
-    .bot-icon {
-        width: 42px;
-        height: 42px;
+.history-container > h1 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
 
+/* History Listener */
+.history-listener {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        gap: 5px;
+    }
+}
+
+/* History Detail */
+.history-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #707070;
+    border-radius: 8px;
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        padding: 5px;
+        gap: 5px;
+    }
+}
+
+.history-detail > h2 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* position: relative; */
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        font-size: 12px;
+        max-width: 80%;
+    }
+}
+
+.horizontal-detail {
+    width: 15px;
+}
+
+/* New Conversation Button */
+.new-conversation {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #268035;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }    
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
         padding: 8px;
+        font-size: 12px;
     }
+}
 
-    .bot-name {
-        font-size: 14px;
-    }
-
-    .status {
-        font-size: 8px;
-
-        padding: 2px 6px;
-    }
+.new-conversation:hover {
+    background-color: #257932;
 }
