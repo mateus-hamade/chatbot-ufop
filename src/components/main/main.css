@@ -26,7 +26,9 @@ main {
         padding: 20px;
         font-size: 14px;
 
-        width: 75%;
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 
@@ -114,4 +116,31 @@ main {
         width: 52px;
         height: 52px;
     }
+}
+
+@media screen and (min-width: 769px) {
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: #5f5f5f25;
+        border-radius: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #5f5f5f65;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-track-piece {
+        background-color: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-corner {
+        background: #f1f1f1;
+    }  
 }
