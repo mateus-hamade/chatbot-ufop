@@ -1,17 +1,15 @@
 .container, .container > div{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100dvh;
     width: 100%;
     color: white;
 
     overflow: hidden;
 }
+
 .container > div {
     flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 @media screen and (min-width: 769px) {
@@ -25,5 +23,50 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+}
+
+/* Dark Theme main */
+.dark-theme-707A81 {
+    background-color: #474f55;
+    color: #c9ced3;
+
+    .bot-message, .user-message {
+        background-color: #1E1E1E;
+    }
+
+    .bot-message::before {
+        border-left: 8px solid #1E1E1E; 
+    }
+    
+    .user-message::before {
+        border-right: 8px solid #1E1E1E; 
+    }
+}
+
+.dark-theme {
+    background-color: #1E1E1E;
+
+    .status {
+        background-color: #962038;
+    }
+
+    form {
+        background-color: #1E1E1E;
+    }
+
+    input {
+        background-color: #474f55;
+        color: #c9ced3;
+    }
+    
+    #send-button {
+        background-color: #268035;
+        color: #c9ced3;
+    }
+
+    .new-conversation {
+        background-color: #962038;
+        color: #c9ced3;
     }
 }

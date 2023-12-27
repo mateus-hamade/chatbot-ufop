@@ -37,7 +37,7 @@ input {
     padding: 10px; 
     background-color: #f0f0f0;
     color: #333333;
-    box-shadow: 1px 1px 5px rgb(180, 180, 180);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilos para o botão de envio */
