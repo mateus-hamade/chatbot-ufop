@@ -33,7 +33,7 @@ const Header = () => {
             <div className="information-listener">
                { informations.map((information, index) => {
                   return (
-                     <a href={links[index]} target="_blank" rel="noreferrer" className="information-detail">
+                     <a key={index} href={links[index]} target="_blank" rel="noreferrer" className="information-detail">
                         <p>{information}</p>
                         {icons[index]}
                      </a>
