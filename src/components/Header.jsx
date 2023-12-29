@@ -3,6 +3,7 @@ import React from "react";
 import { useTheme } from "./ThemeContext";
 import BotStatus from "./BotStatus";
 import Information from "./Information";
+import Contact from "./Contact";
 
 import { Moon, Sun } from "lucide-react";
 
@@ -25,6 +26,7 @@ const Header = () => {
          </button>
 
          <Information />
+         <Contact />
       </header>
    );
 };

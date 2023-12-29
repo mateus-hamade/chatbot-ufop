@@ -33,8 +33,8 @@
 }
 
 .information-schedule    {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 10px;
 }
 
@@ -50,6 +50,7 @@
     text-decoration: none;
 
     @media screen and (min-width: 769px) and (max-width: 1024px) {
+        font-size: 12px;
         gap: 5px;
     }
 }

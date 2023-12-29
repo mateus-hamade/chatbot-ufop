@@ -1,0 +1,96 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.contact-phone, .contact-clock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+
+    background-color: #268035;
+
+    text-decoration: none;
+    color: white;
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    @media (min-width: 768px) {
+        padding: 5px;
+    }
+
+    @media (min-width: 1200px) {
+        padding: 10px;
+    }
+}
+
+.contact-phone:hover, .contact-clock:hover {
+    background-color: #2d8645;
+}
+
+.contact-phone:hover .phone-icon {
+    animation: shake 0.5s infinite;
+}
+
+.contact-clock:hover .clock-icon {
+    animation: clock 1s infinite;
+}
+
+.phone-paragraph, .clock-paragraph {
+    text-align: center;
+    font-size: 10px;
+
+    @media (min-width: 1024px) {
+        font-size: 8px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 12px;
+    }
+}
+
+.phone-icon, .clock-icon {
+    width: 15px;
+    margin-bottom: 2px;
+
+    @media (min-width: 1200px) {
+        width: 30px;
+    }
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}
+
+@keyframes clock {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
