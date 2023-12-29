@@ -5,6 +5,8 @@ footer {
     padding: 14px;
     width: 100%;
 
+    transition: background-color 0.5s ease-in-out;
+
     @media screen and (min-width: 769px) {
         padding: 20px;
     }
@@ -16,6 +18,8 @@ form {
     width: 100%;
     background-color: #f0f0f0;
     gap: 10px;
+
+    transition: background-color 0.5s ease-in-out;
 
     @media screen and (min-width: 426px) and (max-width: 768px) {
         width: 95%;
@@ -34,6 +38,8 @@ input {
     background-color: #f0f0f0;
     color: #333333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    transition: background-color 0.5s ease-in-out;
 }
 
 #send-button {
@@ -46,6 +52,8 @@ input {
     border: none;
 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    transition: background-color 0.5s ease-in-out;
 }
 
 #send-button:hover,
