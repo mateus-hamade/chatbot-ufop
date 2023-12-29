@@ -1,0 +1,55 @@
+.information-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    gap: 10px;
+    width: 100%;
+    padding: 20px;
+    
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        gap: 5px;
+    }
+}
+
+.information-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.information-title {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        font-size: 12px;
+    }
+}
+
+.information-schedule    {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.information-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #707070;
+    border-radius: 8px;
+
+    color: white;
+    text-decoration: none;
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        gap: 5px;
+    }
+}

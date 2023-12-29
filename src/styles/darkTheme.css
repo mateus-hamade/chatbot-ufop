@@ -1,33 +1,4 @@
-.container, .container > div{
-    display: flex;
-    flex-direction: column;
-    height: 100dvh;
-    width: 100%;
-    color: white;
-
-    overflow: hidden;
-}
-
-.container > div {
-    flex: 1;
-}
-
-@media screen and (min-width: 769px) {
-    .container {
-        flex-direction: row;
-    }
-}
-
-@media screen and (min-width: 1025px) {
-    .container > div {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-/* Dark Theme para a main */
-.dark-theme-707A81 {
+.dark-theme-707A81 { 
     background-color: #474f55;
     color: #c9ced3;
 
@@ -44,7 +15,6 @@
     }
 }
 
-/* Dark Theme geral */
 .dark-theme {
     background-color: #1E1E1E;
 

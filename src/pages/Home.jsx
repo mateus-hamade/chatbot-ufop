@@ -2,30 +2,31 @@ import React, { useState } from "react";
 
 import { ThemeProvider } from "../components/ThemeContext";
 
-import Header from "../components/header/Header";
-import Main from "../components/main/Main";
-import Footer from "../components/footer/Footer";
+import Header from "../components/Header";
+import Main from "../components/Main";
+import Footer from "../components/Footer";
 
-import "./Home.css";
+import "../styles/home.css";
+import "../styles/darkTheme.css";
 
 const Home = () => {
-   const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState([]);
 
-   const addMessage = (message) => {
-      setMessages((prevMessages) => [...prevMessages, message]);
-   };
+  const addMessage = (message) => {
+    setMessages((prevMessages) => [...prevMessages, message]);
+  };
 
-   return (
-      <ThemeProvider>
-         <div className="container">
-            <Header />
-            <div>
-               <Main messages={messages} />
-               <Footer addMessage={addMessage} />
-            </div>
-         </div>
-      </ThemeProvider>
-   );
+  return (
+    <ThemeProvider>
+      <div className="container">
+        <Header />
+        <div>
+          <Main messages={messages} />
+          <Footer addMessage={addMessage} />
+        </div>
+      </div>
+    </ThemeProvider>
+  );
 };
 
 export default Home;
