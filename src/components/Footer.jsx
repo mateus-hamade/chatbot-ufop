@@ -26,7 +26,7 @@ const Footer = ({ addMessage }) => {
                 const botResponse = await sendMessage(userMessage);
                 addMessage({ type: "bot", content: botResponse });
             } catch (error) {
-                console.log(error);
+                addMessage({ type: "bot", content: "Desculpe, no momento nossos servidores estão indisponíveis. Tendo novamente mais tarde!" });
             } finally {
                 setIsLoading(false);
             }

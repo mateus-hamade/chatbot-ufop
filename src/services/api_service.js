@@ -6,7 +6,7 @@ const sendMessage = async (message) => {
         return response.data.message;
         
     } catch (error) {
-        console.log(error);
+        return error.response.data.message;
     }
 }
 

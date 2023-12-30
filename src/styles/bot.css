@@ -32,7 +32,7 @@
 .bot-message::before{
     content: '';
     position: absolute;
-    top: 35%;
+    top: 20px;
     left: 100%;
     border-top: 8px solid transparent;
     border-left: 8px solid #707A81;

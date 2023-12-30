@@ -22,9 +22,9 @@ const Main = ({ messages }) => {
                </p>
 
                <div className="suggestion-container">
-                  <Suggestion title="Cursos ofertados" link="quais os cursos ofertados pela ufop?" />
-                  <Suggestion title="Cardapio do RU" link="qual o cardápio do RU hoje?" />
-                  <Suggestion title="Calendário acadêmico" link="quais são os feriados neste periodo?" />
+                  <Suggestion title="Cursos ofertados" link="Quais os cursos ofertados pela ufop?" />
+                  <Suggestion title="Cardapio do RU" link="Qual o cardápio do RU hoje?" />
+                  <Suggestion title="Calendário acadêmico" link="Quais são os feriados neste periodo?" />
                </div>
             </div>
          ) : (

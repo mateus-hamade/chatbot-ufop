@@ -6,7 +6,7 @@ const Suggestion = ({ title, link }) => {
     return (
         <div className="suggestion">
             <h1 className="suggestion-title">{ title }</h1>
-            <p class="suggestion-paragraph">{ link }</p>
+            <p className="suggestion-paragraph">{ link }</p>
         </div>
     )
 }

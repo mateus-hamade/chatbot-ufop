@@ -31,7 +31,7 @@
 .user-message::before{
     content: '';
     position: absolute;
-    top: 35%;
+    top: 20px;
     right: 100%;
     border-top: 8px solid transparent;
     border-left: 8px solid transparent;
