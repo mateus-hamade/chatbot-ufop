@@ -3,11 +3,11 @@ import React, { useState } from "react";
 import { useTheme } from "./ThemeContext";
 import { sendMessage } from "../services/api_service";
 
-import { ArrowUp, Loader2 } from "lucide-react";
+import { ArrowUp, Loader2, ArrowLeft , ArrowRight } from "lucide-react";
 
 import "../styles/footer.css";
 
-const Footer = ({ addMessage }) => {
+const Footer = ({ addMessage, isMenuOpen, setIsMenuOpen }) => {
     const { isDarkMode } = useTheme();
     const [inputValue, setInputValue] = useState("");
     const [isLoading, setIsLoading] = useState(false);
@@ -40,7 +40,7 @@ const Footer = ({ addMessage }) => {
     return (
         <footer className={isDarkMode ? "dark-theme" : "light-theme"}>
             <form action="" id="form" autoComplete="off" onSubmit={handleSubmit}>
-                <input id="input-chat" value={inputValue} onChange={handleChange} />
+                <input id="input-chat" value={inputValue} onChange={handleChange} placeholder="Digite sua mensagem" type="text" autoFocus autoComplete="off" />
                 <button id="send-button" type="submit" disabled={isLoading}>
                     {isLoading ? (
                         <Loader2 className="loading" />
@@ -49,6 +49,13 @@ const Footer = ({ addMessage }) => {
                     )}
                 </button>
             </form>
+            <button className="menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                {isMenuOpen ? (
+                    <ArrowRight className="menu-icon"/>
+                    ) : (
+                    <ArrowLeft className="menu-icon" />
+                )}                       
+            </button>
         </footer>
     );
 };

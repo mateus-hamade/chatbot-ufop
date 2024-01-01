@@ -35,3 +35,7 @@ header {
         border-right: 1px solid #5f5f5f25;
     }
 }
+
+.menu-closed {
+    display: none;
+}

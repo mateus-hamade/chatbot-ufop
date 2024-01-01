@@ -11,17 +11,17 @@ import "../styles/header.css";
 import "../styles/bot.css";
 import "../styles/user.css";
 
-const Header = () => {
+const Header = ({isMenuOpen}) => {
    const { isDarkMode, toggleTheme } = useTheme();
 
    return (
-      <header className={isDarkMode ? "dark-theme" : "light-theme"}>
+      <header className={`${isDarkMode ? "dark-theme" : "light-theme"} ${isMenuOpen ? "menu-closed" : "menu-open"}`}>
          <BotStatus />
-         <button className="theme">
+         <button className="theme" onClick={toggleTheme}>
             {isDarkMode ? (
-               <Sun onClick={toggleTheme} />
+               <Sun />
             ) : (
-               <Moon onClick={toggleTheme} />
+               <Moon />
             )}
          </button>
 

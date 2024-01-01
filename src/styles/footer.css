@@ -2,8 +2,11 @@ footer {
     background-color: #f0f0f0; 
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 14px;
     width: 100%;
+
+    position: relative;
 
     transition: background-color 0.5s ease-in-out;
 
@@ -40,6 +43,31 @@ input {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
     transition: background-color 0.5s ease-in-out;
+}
+
+.menu {
+    display: flex;
+    background-color: transparent;
+    
+    border: none;
+    border-left: 2px solid #707070;
+
+    cursor: pointer;
+
+    position: absolute;
+    left: 10px;
+
+    @media screen and (max-width: 1023px) {
+        display: none;
+    }
+}
+
+.menu-icon {
+    color: #707070;
+}
+
+.menu-icon:hover {
+    animation: closing 0.5s ease-in-out infinite;
 }
 
 #send-button {
@@ -92,5 +120,17 @@ input:focus {
     }
     100% {
         transform: translateY(-2px);
+    }
+}
+
+@keyframes closing {
+    0% {
+        transform: translateX(-2px);
+    }
+    50% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(-2px);
     }
 }

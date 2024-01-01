@@ -17,6 +17,7 @@
 
 .dark-theme {
     background-color: #1E1E1E;
+    color: #c9ced3;
 
     .status {
         background-color: #962038;
@@ -45,4 +46,13 @@
         background-color: #962038;
         color: #c9ced3;
     }
+    
+    .menu {
+        border-color: #c9ced3;
+    }
+    
+    .menu-icon {
+        color: #c9ced3;
+    }
+
 }

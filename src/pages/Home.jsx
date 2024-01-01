@@ -11,6 +11,7 @@ import "../styles/darkTheme.css";
 
 const Home = () => {
   const [messages, setMessages] = useState([]);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const addMessage = (message) => {
     setMessages((prevMessages) => [...prevMessages, message]);
@@ -19,10 +20,10 @@ const Home = () => {
   return (
     <ThemeProvider>
       <div className="container">
-        <Header />
+        <Header isMenuOpen={isMenuOpen} />
         <div>
           <Main messages={messages} />
-          <Footer addMessage={addMessage} />
+          <Footer addMessage={addMessage} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
         </div>
       </div>
     </ThemeProvider>
