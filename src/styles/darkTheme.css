@@ -1,4 +1,4 @@
-.dark-theme-707A81 { 
+.dark-theme-707A81 {
     background-color: #474f55;
     color: #c9ced3;
 
@@ -7,11 +7,11 @@
     }
 
     .bot-message::before {
-        border-left: 8px solid #1E1E1E; 
+        border-left: 8px solid #1E1E1E;
     }
-    
+
     .user-message::before {
-        border-right: 8px solid #1E1E1E; 
+        border-right: 8px solid #1E1E1E;
     }
 }
 
@@ -31,28 +31,24 @@
         background-color: #474f55;
         color: #c9ced3;
     }
-    
+
     #send-button {
         background-color: #268035;
         color: #c9ced3;
     }
 
-    .new-conversation {
+    .new-conversation,
+    .contact-phone,
+    .contact-clock {
         background-color: #962038;
         color: #c9ced3;
     }
 
-    .contact-phone, .contact-clock {
-        background-color: #962038;
-        color: #c9ced3;
-    }
-    
     .menu {
         border-color: #c9ced3;
     }
-    
+
     .menu-icon {
         color: #c9ced3;
     }
-
 }

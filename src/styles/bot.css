@@ -8,7 +8,6 @@
 .bot-message {
     display: flex;
     align-items: center;
-
     position: relative;
     flex-wrap: wrap;
     border-radius: 10px;
@@ -18,7 +17,7 @@
     padding: 8px;
     order: -1;
 
-    @media screen and (min-width: 481px) and (max-width: 1025px) {
+    @media screen and (min-width: 481px) {
         max-width: 80%;
         padding: 10px;
     }
@@ -27,17 +26,17 @@
         max-width: 80%;
         padding: 12px;
     }
-}
 
-.bot-message::before{
-    content: '';
-    position: absolute;
-    top: 20px;
-    left: 100%;
-    border-top: 8px solid transparent;
-    border-left: 8px solid #707A81;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid transparent;   
+    &::before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: 100%;
+        border-top: 8px solid transparent;
+        border-left: 8px solid #707A81;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid transparent;   
+    }
 }
 
 .icon {
@@ -49,12 +48,12 @@
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
-    @media screen and (min-width: 320px) and (max-width: 1025px) {
+    @media screen and (min-width: 320px) {
         width: 48px;
         height: 48px;
     }
 
-    @media screen and (min-width: 769px) and (max-width: 1025px) {
+    @media screen and (min-width: 769px) {
         width: 52px;
         height: 52px;
     }
