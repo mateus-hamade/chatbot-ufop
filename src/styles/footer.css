@@ -34,18 +34,21 @@ input {
     flex: 1;
     border: none;
     border-radius: 8px;
-    padding: 10px; 
+    padding: 15px; 
     background-color: #f0f0f0;
     color: #333333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: background-color 0.5s ease-in-out;
 }
 
+/* input:focus {
+    border: 1px solid var(--secondary);
+} */
+
 .menu {
     display: flex;
     background-color: transparent;
     border: none;
-    border-left: 2px solid #707070;
     cursor: pointer;
     position: absolute;
     left: 10px;
@@ -68,16 +71,11 @@ input {
     justify-content: center;
     align-items: center;
     padding: 8px;
-    background-color: #962038;
+    background-color: var(--primary);
     border-radius: 12px;
     border: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: background-color 0.5s ease-in-out;
-}
-
-#send-button:hover,
-#send-button:focus {
-    background-color: #861c32;
 }
 
 input:focus {

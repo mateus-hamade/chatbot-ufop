@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useTheme } from "./ThemeContext";
 import { sendMessage } from "../services/api_service";
 
-import { ArrowUp, Loader2, ArrowLeft , ArrowRight } from "lucide-react";
+import { ArrowUp, Loader2, ChevronLeft, ChevronRight } from "lucide-react";
 
 import "../styles/footer.css";
 
@@ -51,9 +51,9 @@ const Footer = ({ addMessage, isMenuOpen, setIsMenuOpen }) => {
             </form>
             <button className="menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                 {isMenuOpen ? (
-                    <ArrowRight className="menu-icon"/>
+                    <ChevronRight className="menu-icon"/>
                     ) : (
-                    <ArrowLeft className="menu-icon" />
+                    <ChevronLeft className="menu-icon" />
                 )}                       
             </button>
         </footer>

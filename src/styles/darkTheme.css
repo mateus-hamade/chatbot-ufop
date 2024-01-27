@@ -20,7 +20,7 @@
     color: #c9ced3;
 
     .status {
-        background-color: #962038;
+        background-color: var(--primary);
     }
 
     form {
@@ -33,14 +33,14 @@
     }
 
     #send-button {
-        background-color: #268035;
+        background-color: var(--secondary);
         color: #c9ced3;
     }
 
     .new-conversation,
     .contact-phone,
     .contact-clock {
-        background-color: #962038;
+        background-color: var(--primary);
         color: #c9ced3;
     }
 

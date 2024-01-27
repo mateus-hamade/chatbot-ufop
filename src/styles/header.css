@@ -2,7 +2,7 @@
 header {
     display: flex;
     align-items: center;
-    background-color: #962038;
+    background-color: var(--primary);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     gap: 10px;
     padding: 10px;
@@ -37,5 +37,29 @@ header {
 }
 
 .menu-closed {
-    display: none;
+    position: absolute;
+    height: 100vh;
+    animation: slideOut 0.1s ease-in-out forwards;
+}
+
+.menu-open {
+    animation: slideIn 0.1s ease-in-out forwards;
+}
+
+@keyframes slideOut {
+    from { 
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideIn {
+    from { 
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }

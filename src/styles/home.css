@@ -12,6 +12,10 @@
     flex: 1;
 }
 
+.sub-container {
+    flex: 1;
+}
+
 @media screen and (min-width: 769px) {
     .container {
         flex-direction: row;

@@ -44,7 +44,7 @@
 }
 
 .status {
-    background-color: #268035;
+    background-color: var(--secondary);
     color: white;
     font-weight: 700;
     border-radius: 14px;

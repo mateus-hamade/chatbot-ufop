@@ -17,7 +17,7 @@
     justify-content: center;
     border-radius: 10px;
     padding: 10px;
-    background-color: #268035;
+    background-color: var(--secondary);
     text-decoration: none;
     color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -31,7 +31,7 @@
     }
 
     &:hover {
-        background-color: #2d8645;
+        background-color: var(--secondary);
     }
 
     &:hover .phone-icon {

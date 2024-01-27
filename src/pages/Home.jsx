@@ -21,7 +21,7 @@ const Home = () => {
     <ThemeProvider>
       <div className="container">
         <Header isMenuOpen={isMenuOpen} />
-        <div>
+        <div className={`${isMenuOpen ? "sub-container" : ""}`}>
           <Main messages={messages} />
           <Footer addMessage={addMessage} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
         </div>
