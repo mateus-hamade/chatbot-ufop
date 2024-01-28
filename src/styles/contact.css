@@ -20,7 +20,7 @@
     background-color: var(--secondary);
     text-decoration: none;
     color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px var(--shadow);
 
     @media (min-width: 768px) {
         padding: 5px;

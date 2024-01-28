@@ -1,54 +1,54 @@
 .dark-theme-707A81 {
-    background-color: #474f55;
-    color: #c9ced3;
+    background-color: var(--gray-400);
+    color: var(--gray-200);
 
     .bot-message, .user-message {
-        background-color: #1E1E1E;
+        background-color: var(--gray-800);
     }
 
     .bot-message::before {
-        border-left: 8px solid #1E1E1E;
+        border-left: 8px solid var(--gray-800);
     }
 
     .user-message::before {
-        border-right: 8px solid #1E1E1E;
+        border-right: 8px solid var(--gray-800);
     }
 }
 
 .dark-theme {
-    background-color: #1E1E1E;
-    color: #c9ced3;
+    background-color: var(--gray-800);
+    color: var(--gray-200);
 
     .status {
         background-color: var(--primary);
     }
 
     form {
-        background-color: #1E1E1E;
+        background-color: var(--gray-800);
     }
 
     input {
-        background-color: #474f55;
-        color: #c9ced3;
+        background-color: var(--gray-400);
+        color: var(--gray-200);
     }
 
     #send-button {
         background-color: var(--secondary);
-        color: #c9ced3;
+        color: var(--gray-200);
     }
 
     .new-conversation,
     .contact-phone,
     .contact-clock {
         background-color: var(--primary);
-        color: #c9ced3;
+        color: var(--gray-200);
     }
 
     .menu {
-        border-color: #c9ced3;
+        border-color: var(--gray-200);
     }
 
     .menu-icon {
-        color: #c9ced3;
+        color: var(--gray-200);
     }
 }
