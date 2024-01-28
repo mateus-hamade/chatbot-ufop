@@ -26,7 +26,7 @@ const Footer = ({ addMessage, isMenuOpen, setIsMenuOpen }) => {
                 const botResponse = await sendMessage(userMessage);
                 addMessage({ type: "bot", content: botResponse });
             } catch (error) {
-                addMessage({ type: "bot", content: "Desculpe, no momento nossos servidores estão indisponíveis. Tendo novamente mais tarde!" });
+                addMessage({ type: "bot", content: "  Desculpe, no momento nossos servidores estão indisponíveis. Tente novamente mais tarde!" });
             } finally {
                 setIsLoading(false);
             }
