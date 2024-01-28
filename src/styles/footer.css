@@ -66,6 +66,7 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     padding: 8px;
     background-color: var(--primary);
     border-radius: 12px;

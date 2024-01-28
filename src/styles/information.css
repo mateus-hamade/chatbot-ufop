@@ -43,7 +43,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    border: 1px solid var(--gray-400);
+    border: 1px solid var(--gray-200);
     border-radius: 8px;
     color: white;
     text-decoration: none;

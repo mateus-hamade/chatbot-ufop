@@ -20,10 +20,14 @@ const Home = () => {
   return (
     <ThemeProvider>
       <div className="container">
-        <Header isMenuOpen={isMenuOpen} />
-        <div className={`${isMenuOpen ? "sub-container" : ""}`}>
-          <Main messages={messages} />
-          <Footer addMessage={addMessage} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
+        <Header isMenuOpen={ isMenuOpen } />
+        <div className={`${ isMenuOpen ? "sub-container" : "" }`}>
+          <Main messages={ messages } />
+          <Footer 
+            addMessage={ addMessage } 
+            isMenuOpen={isMenuOpen} 
+            setIsMenuOpen={setIsMenuOpen}
+          />
         </div>
       </div>
     </ThemeProvider>
