@@ -6,6 +6,8 @@ import { Share, Eraser } from "lucide-react";
 import UserMessage from "./UserMessage";
 import BotMessage from "./BotMessage";
 import Suggestion from "./Suggestion";
+import ShareConversation from "./ShareConversation";
+import Menu from "./Menu";
 
 import "../styles/main.css";
 import "../styles/bot.css"
@@ -13,26 +15,16 @@ import "../styles/user.css"
 
 const Main = ({ messages, setMessages }) => {
    const { isDarkMode } = useTheme();
+   const [ modal, setModal ] = useState(false);
 
-   const clearMessages = () => {
-      setMessages([]);
+   const changeModal = () => {
+      setModal(!modal);
    }
 
    return (
       <main className={isDarkMode ? "dark-theme-707A81" : "light-theme"}>
-         <div className="container-config">
-            <div className="container-config-title">
-               <p>Pergunte ao chatbot da UFOP 🤔</p>
-            </div>
-            <div className="container-config-buttons">
-               <button className="button-config" onClick={clearMessages}>
-                  <Eraser width={16} height={16}/>
-               </button>
-               <button className="button-config">
-                  <Share width={16} height={16}/>
-               </button>
-            </div>
-         </div>
+         <ShareConversation messages={messages} modal={modal} changeModal={changeModal} />
+         <Menu setMessages={setMessages} changeModal={changeModal}/>
          <div className="container-main">
             {messages.length === 0 ? (
                <div className="empty-main-message">

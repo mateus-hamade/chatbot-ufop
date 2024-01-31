@@ -39,4 +39,8 @@
     .menu-icon {
         color: var(--gray-200);
     }
+
+    .share-div {
+        background-color: var(--gray-600);
+    }
 }
