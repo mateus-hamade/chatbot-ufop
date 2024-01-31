@@ -21,7 +21,7 @@ const BotMessage = ({ message }) => {
   
     return (
         <div className="bot-container">
-            <Bot className="icon" />
+            <Bot className="icon-bot icon" />
             <p className="bot-message">{displayedMessage}</p>
         </div>
     );

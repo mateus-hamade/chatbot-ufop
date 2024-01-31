@@ -2,35 +2,43 @@
 header {
     display: flex;
     align-items: center;
+    gap: 10px;
+
     background-color: var(--primary);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    gap: 10px;
     padding: 10px;
+
     transition: background-color 0.5s ease-in-out;
 
     @media screen and (min-width: 320px) and (max-width: 480px) {
         gap: 10px;
+
         padding: 10px;
         border-bottom: 1px solid var(--gray-700);
     }
 
     @media screen and (min-width: 481px) and (max-width: 768px) {
         gap: 16px;
+
         padding: 14px;
     }
 
     @media screen and (min-width: 769px) and (max-width: 1024px) {
         flex-direction: column;
-        width: 25%;
         gap: 16px;
+
+        width: 30%;
+
         padding: 14px;
         border-right: 1px solid var(--gray-700);
     }
 
     @media screen and (min-width: 1025px) {
         flex-direction: column;
-        width: 25%;
         gap: 16px;
+
+        width: 25%;
+        
         padding: 20px;
         border-right: 1px solid var(--gray-700);
     }

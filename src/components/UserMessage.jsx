@@ -1,11 +1,11 @@
 import React from "react";
 
-import { User2 } from "lucide-react";
+import { User } from "lucide-react";
 
 const UserMessage = ({ message }) => {
     return (
         <div className="user-container">
-            <User2 className="icon"/>
+            <User className="icon-user icon"/>
             <p className="user-message">{ message }</p>
         </div>
     );

@@ -1,11 +1,13 @@
 footer {
-    background-color: var(--gray-50); 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+    
     padding: 14px;
     width: 100%;
-    position: relative;
+    
     transition: background-color 0.5s ease-in-out;
 
     @media screen and (min-width: 769px) {
@@ -16,9 +18,10 @@ footer {
 form {
     display: flex;    
     align-items: center;
-    width: 100%;
-    background-color: var(--gray-50);
     gap: 10px;
+    
+    width: 100%;
+    
     transition: background-color 0.5s ease-in-out;
 
     @media screen and (min-width: 426px) and (max-width: 768px) {
@@ -32,22 +35,31 @@ form {
 
 input {
     flex: 1;
-    border: none;
-    border-radius: 8px;
-    padding: 15px; 
-    background-color: var(--gray-50);
+
+    background-color: transparent;
     color: #333333;
-    box-shadow: 0 2px 4px var(--shadow);
+
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+
+    padding: 15px; 
+
     transition: background-color 0.5s ease-in-out;
+}
+
+input:focus {
+    border: 1px solid var(--gray-300);
 }
 
 .menu {
     display: flex;
+    
+    position: absolute;
+    left: 10px;
+    
     background-color: transparent;
     border: none;
     cursor: pointer;
-    position: absolute;
-    left: 10px;
 
     @media screen and (max-width: 1023px) {
         display: none;
@@ -66,12 +78,15 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+
     cursor: pointer;
     padding: 8px;
     background-color: var(--primary);
+    
     border-radius: 12px;
     border: none;
     box-shadow: 0 2px 4px var(shadow);
+    
     transition: background-color 0.5s ease-in-out;
 }
 

@@ -3,6 +3,7 @@
     flex-direction: column;
     flex: 1 1 auto;
     gap: 10px;
+
     width: 100%;
     padding: 20px;
 
@@ -24,11 +25,20 @@
 
 .information-title {
     text-align: center;
+
     font-size: 14px;
     font-weight: 700;
 
     @media screen and (min-width: 769px) and (max-width: 1024px) {
-        font-size: 12px;
+        font-size: 10px;
+    }
+
+    @media screen and (min-width: 1025px) and (max-width: 1200px){
+        font-size: 11px;
+    }
+
+    @media screen and (min-width: 1201px) {
+        font-size: 14px;
     }
 }
 
@@ -42,15 +52,26 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     padding: 10px;
     border: 1px solid var(--gray-200);
     border-radius: 8px;
+    
     color: white;
     text-decoration: none;
 
     @media screen and (min-width: 769px) and (max-width: 1024px) {
         font-size: 12px;
         gap: 5px;
+        padding: 8px;
+    }
+
+    @media screen and (min-width: 1025px) and (max-width: 1200px){
+        font-size: 12px;
+    }
+
+    @media screen and (min-width: 1201px) {
+        font-size: 14px;
     }
 }
 

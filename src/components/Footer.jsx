@@ -4,7 +4,6 @@ import { useTheme } from "./ThemeContext";
 import { sendMessage } from "../services/api_service";
 
 import { ArrowUp, Loader2, ChevronLeft, ChevronRight } from "lucide-react";
-
 import "../styles/footer.css";
 
 const Footer = ({ addMessage, isMenuOpen, setIsMenuOpen }) => {

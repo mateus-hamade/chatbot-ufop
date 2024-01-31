@@ -2,16 +2,8 @@
     background-color: var(--gray-400);
     color: var(--gray-200);
 
-    .bot-message, .user-message {
-        background-color: var(--gray-800);
-    }
-
-    .bot-message::before {
-        border-left: 8px solid var(--gray-800);
-    }
-
-    .user-message::before {
-        border-right: 8px solid var(--gray-800);
+    .container-config-title {
+        color: white;
     }
 }
 
@@ -23,12 +15,8 @@
         background-color: var(--primary);
     }
 
-    form {
-        background-color: var(--gray-800);
-    }
-
     input {
-        background-color: var(--gray-400);
+        border: 1px solid var(--gray-600);
         color: var(--gray-200);
     }
 

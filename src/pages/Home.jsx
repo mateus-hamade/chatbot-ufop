@@ -22,7 +22,7 @@ const Home = () => {
       <div className="container">
         <Header isMenuOpen={ isMenuOpen } />
         <div className={`${ isMenuOpen ? "sub-container" : "" }`}>
-          <Main messages={ messages } />
+          <Main messages={ messages } setMessages={setMessages} />
           <Footer 
             addMessage={ addMessage } 
             isMenuOpen={isMenuOpen} 
