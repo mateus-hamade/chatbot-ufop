@@ -36,7 +36,7 @@ form {
 input {
     flex: 1;
 
-    background-color: transparent;
+    background-color: white;
     color: #333333;
 
     border: 1px solid var(--gray-200);
