@@ -8,7 +8,6 @@ const BotStatus = () => {
     return (
         <div className="status-container">
             <Bot className="icon" />
-
             <div className="detail-container">
                 <p className="bot-name">Assistente Ufopianx</p>
                 <p className="status">Online</p>

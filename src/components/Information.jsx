@@ -31,14 +31,14 @@ const Information = () => {
                 {informations.map((information, index) => {
                     return (
                         <a
-                            key={index}
-                            href={links[index]}
+                            key={ index }
+                            href={ links[index] }
                             target="_blank"
                             rel="noreferrer"
                             className="information-detail"
                         >
-                            <p>{information}</p>
-                            {icons[index]}
+                            <p>{ information }</p>
+                            { icons[index] }
                         </a>
                     );
                 })}

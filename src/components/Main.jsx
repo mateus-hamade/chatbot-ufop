@@ -1,20 +1,17 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 import { useTheme } from "./ThemeContext";
-import { Share, Eraser } from "lucide-react";
 
-import UserMessage from "./UserMessage";
-import BotMessage from "./BotMessage";
-import Suggestion from "./Suggestion";
+import UserMessage       from "./UserMessage";
+import BotMessage        from "./BotMessage";
+import Suggestion        from "./Suggestion";
 import ShareConversation from "./ShareConversation";
-import Menu from "./Menu";
+import Menu              from "./Menu";
 
 import "../styles/main.css";
-import "../styles/bot.css"
-import "../styles/user.css"
 
 const Main = ({ messages, setMessages }) => {
-   const { isDarkMode } = useTheme();
+   const { isDarkMode }      = useTheme();
    const [ modal, setModal ] = useState(false);
 
    const changeModal = () => {
@@ -22,11 +19,18 @@ const Main = ({ messages, setMessages }) => {
    }
 
    return (
-      <main className={isDarkMode ? "dark-theme-707A81" : "light-theme"}>
-         <ShareConversation messages={messages} modal={modal} changeModal={changeModal} />
-         <Menu setMessages={setMessages} changeModal={changeModal}/>
+      <main className={ isDarkMode ? "dark-theme-707A81" : "light-theme" }>
+         <ShareConversation 
+            messages={ messages } 
+            modal={ modal } 
+            changeModal={ changeModal } 
+         />
+         <Menu 
+            setMessages={ setMessages } 
+            changeModal={ changeModal }
+         />
          <div className="container-main">
-            {messages.length === 0 ? (
+            { messages.length === 0 ? (
                <div className="empty-main-message">
                   <p className="empty-main-paragraph">
                      Olá! 👋 Eu sou o assistente da UFOP, uma inteligência artificial pronta para ajudar. Qual é a sua pergunta do dia?
@@ -42,9 +46,9 @@ const Main = ({ messages, setMessages }) => {
             ) : (
                messages.map((message, index) =>
                   message.type === "user" ? (
-                     <UserMessage key={index} message={message.content} />
+                     <UserMessage key={ index } message={ message.content } />
                   ) : (
-                     <BotMessage key={index} message={message.content} />
+                     <BotMessage key={ index } message={ message.content } />
                   )
                )
             )}

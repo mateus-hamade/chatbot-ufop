@@ -1,24 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+
+import useAnimatedText from "../utils/useAnimatedText";
 
 import { Bot } from "lucide-react";
 
+import "../styles/bot.css"
+
 const BotMessage = ({ message }) => {
-    const [displayedMessage, setDisplayedMessage] = useState("");
-  
-    useEffect(() => {
-        let index = 0;
-        const intervalId = setInterval(() => {
-            setDisplayedMessage((prev) => prev + message[index]);
-            index++;
-    
-            if (index === message.length - 1) {
-                clearInterval(intervalId);
-            }
-        }, 50);
-  
-        return () => clearInterval(intervalId);
-    }, [message]);
-  
+    const displayedMessage = useAnimatedText(message);
+
     return (
         <div className="bot-container">
             <Bot className="icon-bot icon" />
