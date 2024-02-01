@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { useTheme } from "./ThemeContext";
 
-import { ArrowUp, Loader2, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowUp, Loader2, PanelRightClose, PanelLeftClose } from "lucide-react";
 
 import "../styles/footer.css";
 
@@ -25,7 +25,7 @@ const Footer = ({ addMessage, isMenuOpen, setIsMenuOpen }) => {
                 const botResponse = await sendMessage(userMessage);
                 addMessage({ type: "bot", content: botResponse });
             } catch (error) {
-                addMessage({ type: "bot", content: "  Desculpe, no momento nossos servidores estão indisponíveis. Tente novamente mais tarde!" });
+                addMessage({ type: "bot", content: "Desculpe, no momento nossos servidores estão indisponíveis. Tente novamente mais tarde!" });
             } finally {
                 setIsLoading(false);
             }
@@ -50,9 +50,9 @@ const Footer = ({ addMessage, isMenuOpen, setIsMenuOpen }) => {
             </form>
             <button className="menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                 { isMenuOpen ? (
-                    <ChevronRight className="menu-icon"/>
+                        <PanelRightClose className="menu-icon" />
                     ) : (
-                    <ChevronLeft className="menu-icon" />
+                        <PanelLeftClose className="menu-icon"/>
                 )}                       
             </button>
         </footer>

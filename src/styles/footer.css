@@ -61,6 +61,10 @@ input:focus {
     border: none;
     cursor: pointer;
 
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+    padding: 4px;
+
     @media screen and (max-width: 1023px) {
         display: none;
     }

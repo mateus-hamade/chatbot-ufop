@@ -1,0 +1,38 @@
+.container-config {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+        display: none;
+    }
+}
+
+.container-config-title {
+    color: black;
+}
+
+.container-config-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.button-config {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    color: var(--gray-200);
+    background-color: transparent;
+    font-size: 12px;
+
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--gray-200);
+    
+    cursor: pointer;
+}
