@@ -5,7 +5,7 @@ import EmptyMessage from "../EmptyMessage/EmptyMessage";
 
 import { User, Bot } from "lucide-react";
 
-import styles from "./messageList.module.css";
+import "./messageList.css";
 
 const MessageList = ({ messages }) => {
     if (messages.length === 0) {
@@ -13,7 +13,7 @@ const MessageList = ({ messages }) => {
     }
 
     return (
-        <div className={ styles.container }>
+        <div className="message-container">
             {messages.map((message, index) =>
                 message.type === "user" ? (
                     <Message

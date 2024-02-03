@@ -36,3 +36,11 @@
     
     cursor: pointer;
 }
+
+.share-config {
+    display: none;
+
+    @media screen and (min-width:763px) {
+        display: flex;
+    }
+}
