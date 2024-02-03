@@ -49,9 +49,26 @@ input {
 
 input:focus {
     border: 1px solid var(--gray-300);
+    outline: none;
 }
 
-.menu {
+.button-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    padding: 8px;
+    background-color: var(--primary);
+    
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 2px 4px var(shadow);
+    
+    transition: background-color 0.5s ease-in-out;
+}
+
+.menu-footer {
     display: flex;
     
     position: absolute;
@@ -70,32 +87,8 @@ input:focus {
     }
 }
 
-.menu-icon {
-    color: #707070;
-}
-
-.menu-icon:hover {
-    animation: closing 0.5s ease-in-out infinite;
-}
-
-#send-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    cursor: pointer;
-    padding: 8px;
-    background-color: var(--primary);
-    
-    border-radius: 12px;
-    border: none;
-    box-shadow: 0 2px 4px var(shadow);
-    
-    transition: background-color 0.5s ease-in-out;
-}
-
-input:focus {
-    outline: none;
+.icon-footer {
+    color: var(--gray-300);
 }
 
 .loading {

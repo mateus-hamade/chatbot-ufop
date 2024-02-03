@@ -1,4 +1,4 @@
-.status-container {
+.container-status {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +13,7 @@
     }
 }
 
-.detail-container {
+.container-detail {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -58,11 +58,4 @@
         font-size: 10px;
         padding: 4px 8px;
     }
-}
-
-.theme {
-    display: flex;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
 }

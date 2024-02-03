@@ -2,7 +2,7 @@ import React from "react";
 
 import { Utensils, Calendar, BookText, MessageCircleQuestionIcon, ClipboardList} from "lucide-react";
 
-import "../styles/information.css";
+import "./information.css";
 
 const Information = () => {
     const icons = [<Calendar />, <Utensils />, <BookText />, <ClipboardList />];
@@ -22,20 +22,20 @@ const Information = () => {
     ];
 
     return (
-        <div className="information-container">
-            <div className="information-header">
-                <h1 className="information-title">Informações institucionais</h1>
-                <MessageCircleQuestionIcon className="information-icon" />
+        <div className = "information-container">
+            <div className = "information-header">
+                <h1 className = "information-title">Informações institucionais</h1>
+                <MessageCircleQuestionIcon className = "information-icon" />
             </div>
-            <div className="information-schedule">
+            <div className = "information-schedule">
                 {informations.map((information, index) => {
                     return (
                         <a
-                            key={ index }
-                            href={ links[index] }
-                            target="_blank"
-                            rel="noreferrer"
-                            className="information-detail"
+                            key       = { index }
+                            href      = { links[index] }
+                            target    = "_blank"
+                            rel       = "noreferrer"
+                            className = "information-detail"
                         >
                             <p>{ information }</p>
                             { icons[index] }

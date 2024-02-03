@@ -36,3 +36,9 @@
         font-size: 14px;
     }
 }
+
+.suggestion-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

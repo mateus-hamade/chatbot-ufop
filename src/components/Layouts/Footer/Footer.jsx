@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-import { useTheme } from "../../ThemeContext";
+import { useTheme }    from "../../ThemeContext";
+import { sendMessage } from "../../../services/api_service";
 
 import {
     ArrowUp,
@@ -12,9 +13,9 @@ import {
 import "./footer.css";
 
 const Footer = ({ addMessage, isMenuOpen, setIsMenuOpen }) => {
-    const { isDarkMode } = useTheme();
-    const [inputValue, setInputValue] = useState("");
-    const [isLoading, setIsLoading] = useState(false);
+    const { isDarkMode }                = useTheme();
+    const [ inputValue, setInputValue ] = useState("");
+    const [ isLoading, setIsLoading ]   = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -45,29 +46,28 @@ const Footer = ({ addMessage, isMenuOpen, setIsMenuOpen }) => {
     };
 
     return (
-        <footer className={isDarkMode ? "dark-theme" : "light-theme"}>
-            <form action="" id="form" autoComplete="off" onSubmit={handleSubmit}>
+        <footer className = { isDarkMode ? "dark-theme" : "light-theme" }>
+            <form autoComplete="off" onSubmit = { handleSubmit }>
                 <input
-                    id="input-chat"
-                    type="text"
-                    value={inputValue}
-                    onChange={handleChange}
-                    placeholder="Digite sua mensagem"
-                    autoComplete="off"
+                    type         = "text"
+                    value        = { inputValue }
+                    onChange     = { handleChange }
+                    placeholder  = "Digite sua mensagem"
+                    autoComplete = "off"
                 />
-                <button id="send-button" type="submit" disabled={isLoading}>
+                <button className = "button-footer" type="submit" disabled = { isLoading }>
                     {isLoading ? (
-                        <Loader2 className="loading" />
+                        <Loader2 className = "loading" />
                     ) : (
-                        <ArrowUp className="sending" />
+                        <ArrowUp className = "seding" />
                     )}
                 </button>
             </form>
-            <button className="menu" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <button className = "menu-footer" onClick = { () => setIsMenuOpen(!isMenuOpen) }>
                 {isMenuOpen ? (
-                    <PanelRightClose className="menu-icon" />
+                    <PanelRightClose className="icon-footer" />
                 ) : (
-                    <PanelLeftClose className="menu-icon" />
+                    <PanelLeftClose className="icon-footer" />
                 )}
             </button>
         </footer>
