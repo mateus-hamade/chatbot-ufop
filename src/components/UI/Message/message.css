@@ -19,6 +19,8 @@
     
     border-radius: 10px;
     max-width: 80%;
+
+    white-space: pre-wrap;
     
     padding: 8px;
     order: -1;
