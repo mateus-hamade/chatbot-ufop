@@ -1,7 +1,7 @@
 import { ChatCompletionRequestMessage, Configuration, OpenAIApi } from "openai";
 
 const config = new Configuration({
-  apiKey: "sk-<YOUR_API>",
+    apiKey: "sk-<YOUR_API>",
 });
 
 const openai = new OpenAIApi(config);
@@ -15,7 +15,7 @@ const sendMessage = async (message) => {
         });
         return response.data.choices[0].message.content;
     } catch (error) {
-        return error;
+        return error.message;
     }
 };
 
